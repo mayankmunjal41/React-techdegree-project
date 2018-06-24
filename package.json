@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Mayank Munjal",
+  "start": "npm/yarn run dev-server",
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
