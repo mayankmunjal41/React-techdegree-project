@@ -85,17 +85,9 @@ input {
   width: 100%;
 }
 
-.is-active {
-  background-color: green;
-}
-
 @media only screen and (max-width: 767px)  {
   body {
     padding-top: 2em;
-  }
-
-  .is-active {
-    background-color: green;
   }
 
 
