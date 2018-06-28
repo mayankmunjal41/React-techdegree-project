@@ -1,32 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Dog from './Components/Dog.js'
+import Cats from './Components/Cats.js'
+import Computers from './Components/Computers.js'
 import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
-import Container from './components/Container';
-import Form from './components/Form';
-import Cats from './components/Cats';
-import Dogs from './components/Dogs';
-import Computers from './components/Computers';
+import Container from './Components/Container.js'
 import '../css/index.css';
+
 
 const NotFoundPage = () => (
   <div>
-    404! <Link to="/">Go home</Link>
+    404!
   </div>
 );
 
-const routes = (
-  <BrowserRouter>
-    <div>
-      <Switch>
-        <Route path="/" component = {Container} exact = {true}/>
-        <Route path="/cats" component = {Cats}/>
-        <Route path="/dogs" component = {Dogs}/>
-        <Route path="/computers" component = {Computers}/>
-        <Route component = {NotFoundPage}/>
-      </Switch>
-    </div>
-  </BrowserRouter>
-);
+class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+            <Route path="/" render={() => <Container/>} exact = {true}/>
+            <Route path="/dogs" component = {Dog} />
+            <Route path="/cats" component = {Cats} />
+            <Route path="/computers" component = {Computers} />
+            <Route component = {NotFoundPage} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
+}
 
-
-ReactDOM.render(routes, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));

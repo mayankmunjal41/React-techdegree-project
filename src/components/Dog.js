@@ -1,12 +1,12 @@
 import React from 'react';
 import Container from './Container.js'
 
-class Cats extends React.Component {
+class Dog extends React.Component {
   render() {
     return (
-      <Container title = {"cats"}/>
+      <Container title = {"dogs"}/>
     );
   }
 }
 
-export default Cats;
+export default Dog;
