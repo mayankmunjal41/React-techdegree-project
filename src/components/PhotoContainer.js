@@ -2,6 +2,7 @@ import React from 'react';
 import Results from './Results';
 import NoResults from './NoResults'
 
+// Maps over state array and displays pictures
 
 const PhotoContainer = (props) => {
 

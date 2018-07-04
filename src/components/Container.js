@@ -3,6 +3,9 @@ import Form from './Form.js'
 import Nav from './Nav.js'
 import PhotoContainer from './PhotoContainer.js'
 
+
+// MAIN CONTAINER HANDLING STATE
+
 class Container extends React.Component {
 
   state = {

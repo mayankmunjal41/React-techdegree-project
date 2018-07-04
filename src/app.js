@@ -7,6 +7,7 @@ import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 import Container from './Components/Container.js'
 import '../css/index.css';
 
+// App component for setting routes
 
 const NotFoundPage = () => (
   <div>

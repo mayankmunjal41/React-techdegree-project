@@ -2,6 +2,8 @@ import React from 'react';
 import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 
 
+// Nav links that will lead to separate routes 
+
 class Nav extends React.Component {
   render() {
     return (

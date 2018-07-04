@@ -1,5 +1,7 @@
 import React from 'react';
 
+// ENABLING SEARCH FUNCTIONALITY
+
 class Form extends React.Component {
 
   state = {

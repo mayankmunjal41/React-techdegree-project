@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Displayed when no results
+
 class NoResults extends React.Component {
   render() {
     return (
